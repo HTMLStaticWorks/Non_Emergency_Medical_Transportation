@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | VitalCare Medical Transport</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Drawer Overlay -->
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About Us</a>
+        <a href="home2.html" class="mobile-link">Home 2</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="blog.html" class="mobile-link">Blog</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="dashboard.html" class="mobile-link">Dashboard</a>
+        <a href="login.html" class="mobile-link">Login</a>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <a href="index.html" class="logo"><i class="logo-icon">A</i> VitalCare</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="home2.html" class="nav-link">Home 2</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="nav-link hide-mobile">Login</a>
+                <button id="rtl-toggle" class="toggle-btn"><i class="fa-solid fa-right-left"></i></button>
+                <button id="theme-toggle" class="toggle-btn">🌙</button>
+                <a href="register.html" class="btn btn-primary hide-mobile">Book a Ride</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section class="blog-hero-v2">
+        <div class="container">
+            <h1>Health & <span style="color: var(--secondary);">Mobility</span> Blog</h1>
+            <p>Expert advice, touching stories, and the latest updates in medical transportation and senior wellness.
+            </p>
+        </div>
+    </section>
+
+    <!-- NEW SECTION 1: Featured Monthly Story -->
+    <section class="featured-story-section">
+        <div class="container">
+            <div class="featured-story-grid">
+                <div class="featured-story-image">
+                    <img src="img/featured_story.png" alt="Featured Story">
+                </div>
+                <div class="featured-story-content">
+                    <div class="featured-story-label">Editor's Pick</div>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">The Journey of Mr. Thompson: <br><span
+                            style="color: var(--primary);">Independence Restored</span></h2>
+                    <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">"Life
+                        doesn't stop just because mobility becomes a challenge." Discover how VitalCare helped one
+                        veteran continue his lifelong commitment to local community service by providing reliable,
+                        dignified transportation solutions.</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <img src="img/senior_service.png"
+                            style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid var(--secondary);">
+                        <div>
+                            <div style="font-weight: 700;">Sarah Jenkins</div>
+                            <div style="font-size: 0.85rem; color: var(--text-muted);">Community Care Specialist</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NEW SECTION 3: Blog Categories -->
+    <section class="blog-categories-wrapper">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="font-size: 3rem; margin-bottom: 20px;">Explore by <span
+                        style="color: var(--primary);">Category</span></h2>
+                <p>Browse our articles by topic to find exactly what you need.</p>
+            </div>
+            <div class="category-row">
+                <div class="category-card-v3">
+                    <div class="category-badge-floating">New</div>
+                    <i class="fa-solid fa-notes-medical"></i>
+                    <h3>Patient Care</h3>
+                    <span>12 Articles</span>
+                </div>
+                <div class="category-card-v3">
+                    <i class="fa-solid fa-van-shuttle"></i>
+                    <h3>Mobility Tech</h3>
+                    <span>8 Articles</span>
+                </div>
+                <div class="category-card-v3">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <h3>Safety Guides</h3>
+                    <span>15 Articles</span>
+                </div>
+                <div class="category-card-v3">
+                    <div class="category-badge-floating">Trending</div>
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h3>Senior Wellness</h3>
+                    <span>24 Articles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="card-grid">
+                <!-- Blog Post 1 -->
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="img/blog_choosing.png" alt="Medical Transport"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div style="padding: 24px;">
+                        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                            <span
+                                style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 5px; text-transform: uppercase;">Healthcare
+                                Tips</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Mar 25,
+                                2024</span>
+                        </div>
+                        <h3 style="margin-bottom: 12px; font-size: 1.4rem;">Choosing the Right Medical Transport</h3>
+                        <p class="text-muted" style="font-size: 0.95rem;">A comprehensive guide on what to look for when
+                            selecting a non-emergency medical transportation service.</p>
+                        <a href="#" class="card-link" style="margin-top: 20px;">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="img/senior_service.png" alt="Mobility Benefits"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div style="padding: 24px;">
+                        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                            <span
+                                style="background: rgba(var(--secondary-rgb), 0.1); color: var(--secondary); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 5px; text-transform: uppercase;">Mobility
+                                Guide</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Mar 22,
+                                2024</span>
+                        </div>
+                        <h3 style="margin-bottom: 12px; font-size: 1.4rem;">Benefits of Professional Travel Assistance
+                        </h3>
+                        <p class="text-muted" style="font-size: 0.95rem;">How professional assistance can improve the
+                            quality of life for those with mobility challenges.</p>
+                        <a href="#" class="card-link" style="margin-top: 20px;">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="img/appointment_service.png" alt="Punctuality"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div style="padding: 24px;">
+                        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                            <span
+                                style="background: rgba(var(--accent-rgb), 0.1); color: var(--accent); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 5px; text-transform: uppercase;">Wellness</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Mar 18,
+                                2024</span>
+                        </div>
+                        <h3 style="margin-bottom: 12px; font-size: 1.4rem;">Punctuality in Medical Care</h3>
+                        <p class="text-muted" style="font-size: 0.95rem;">Understanding why arriving on time is critical
+                            for medical treatments like dialysis and routine check-ups.</p>
+                        <a href="#" class="card-link" style="margin-top: 20px;">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="card" style="align-items: flex-start; text-align: left; padding: 0; overflow: hidden;">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="img/recurring_service.png" alt="Recurring Appointments"
+                            style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    </div>
+                    <div style="padding: 24px;">
+                        <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                            <span
+                                style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 5px; text-transform: uppercase;">Scheduler
+                                Tips</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Mar 15,
+                                2024</span>
+                        </div>
+                        <h3 style="margin-bottom: 12px; font-size: 1.4rem;">Managing Recurring Appointments</h3>
+                        <p class="text-muted" style="font-size: 0.95rem;">How to efficiently automate your monthly
+                            medical travel with our new dashboard tools.</p>
+                        <a href="#" class="card-link" style="margin-top: 20px;">Read Article <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEW SECTION 2: Community Newsletter -->
+    <section class="blog-newsletter">
+        <i class="fa-solid fa-envelope-open-text newsletter-bg-icon nb-1"></i>
+        <i class="fa-solid fa-hand-holding-medical newsletter-bg-icon nb-2"></i>
+        <div class="container newsletter-container">
+            <span
+                style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; color: var(--secondary);">Community
+                Updates</span>
+            <h2 style="font-size: 3rem; margin: 15px 0;">Join the VitalCare Community</h2>
+            <p style="font-size: 1.2rem; opacity: 0.8;">Get monthly health tips, mobility best practices, and exclusive
+                service updates delivered straight to your inbox.</p>
+
+            <form class="subscription-box"
+                onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
+                <input type="email" placeholder="Enter your email address" class="subscription-input" required>
+                <button type="submit" class="subscription-btn">Subscribe Free</button>
+            </form>
+            <p style="margin-top: 20px; font-size: 0.85rem; opacity: 0.6;">We respect your privacy. Unsubscribe at any
+                time.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="text-align: left;">
+                    <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VitalCare Medical Transport</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

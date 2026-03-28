@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | VitalCare Medical Transport</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+
+<body class="auth-body">
+
+    <div class="auth-card">
+        <div class="auth-header">
+            <div class="logo" style="justify-content: center; margin-bottom: 20px;">
+                <i class="logo-icon">A</i> VitalCare
+            </div>
+            <h1>Create Account</h1>
+            <p>Join VitalCare medical transport network.</p>
+        </div>
+
+        <form class="auth-form" id="registerForm">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="name@example.com" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <div class="form-group">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms" style="font-size: 0.9rem; margin-bottom: 0; font-weight: 400;">I accept the <a
+                        href="#" style="color: var(--primary); font-weight: 600;">Terms & Conditions</a></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-auth">Register</button>
+        </form>
+
+        <div class="divider">OR</div>
+
+        <button class="btn-social btn-google">
+            <i class="fa-brands fa-google"></i> Continue with Google
+        </button>
+        <button class="btn-social btn-email-social">
+            <i class="fa-solid fa-envelope"></i> Continue with Email
+        </button>
+
+        <div class="auth-footer">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Account created successfully! Redirecting to login...');
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+
+</html>

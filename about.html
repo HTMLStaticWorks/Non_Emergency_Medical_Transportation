@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | VitalCare Medical Transport</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Drawer Overlay -->
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link active">About Us</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="blog.html" class="mobile-link">Blog</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="dashboard.html" class="mobile-link">Dashboard</a>
+        <a href="login.html" class="mobile-link">Login</a>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <a href="index.html" class="logo"><i class="logo-icon">A</i> VitalCare</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="nav-link hide-mobile">Login</a>
+                <button id="rtl-toggle" class="toggle-btn"><i class="fa-solid fa-right-left"></i></button>
+                <button id="theme-toggle" class="toggle-btn">🌙</button>
+                <a href="register.html" class="btn btn-primary hide-mobile">Book a Ride</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Hero -->
+    <section class="services-hero" style="padding: 180px 0;">
+        <div class="container">
+            <span class="service-content-badge" style="background: rgba(var(--secondary-rgb), 0.2); color: white;">OUR
+                STORY</span>
+            <h1 style="font-size: 4.5rem; line-height: 1; margin-top: 15px;">Driven by <span
+                    style="color: var(--secondary);">Compassion</span></h1>
+            <p style="font-size: 1.5rem; max-width: 800px; margin: 30px auto;">At VitalCare, we believe healthcare
+                begins the moment you leave your front door.</p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="section" style="padding: 120px 0;">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 80px; align-items: center;">
+                <div class="reveal-v2">
+                    <span class="service-content-badge">MISSION & VISION</span>
+                    <h2 style="font-size: 3rem; margin-bottom: 25px;">More Than Just a Ride</h2>
+                    <p class="text-muted" style="font-size: 1.2rem; margin-bottom: 30px;">VitalCare was founded with a
+                        single purpose: to eliminate the stress of medical transportation for those who need it most.
+                        We're not just a transport company; we're a mobility partner dedicated to patient dignity and
+                        health equity.</p>
+
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <div style="display: flex; gap: 15px; align-items: flex-start;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--secondary); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fa-solid fa-heart"></i></div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Compassionate Care</h4>
+                                <p class="text-muted">Every driver is trained in patient empathy and physical
+                                    assistance.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 15px; align-items: flex-start;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--primary); color: white; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fa-solid fa-shield-halved"></i></div>
+                            <div>
+                                <h4 style="margin-bottom: 5px;">Safety Guaranteed</h4>
+                                <p class="text-muted">Rigorous vehicle inspections and background-checked technicians.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-image-mask" style="height: 550px;">
+                    <img src="img/featured_story.png" alt="About Our Care">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Categories/Values -->
+    <section class="blog-categories-wrapper" style="background: var(--bg-gray);">
+        <div class="container">
+            <div class="section-header">
+                <h2 style="font-size: 3rem;">Our Core <span style="color: var(--primary);">Values</span></h2>
+                <p>The principles that guide every journey we take.</p>
+            </div>
+            <div class="category-row">
+                <div class="category-card-v3">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <h3>Punctuality</h3>
+                    <span>Arriving on time, every time.</span>
+                </div>
+                <div class="category-card-v3">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                    <h3>Empathy</h3>
+                    <span>Treating every patient like family.</span>
+                </div>
+                <div class="category-card-v3">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3>Innovation</h3>
+                    <span>Leveraging tech for better care.</span>
+                </div>
+                <div class="category-card-v3">
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Inclusion</h3>
+                    <span>Accessible mobility for everyone.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="footer-col" style="text-align: left;">
+                    <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+                    <p class="text-muted">Helping you stay mobile and healthy.</p>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="tel:1234567890">Call Support</a></li>
+                        <li><a href="mailto:info@vitalcare.med">Email Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VitalCare Medical Transport</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

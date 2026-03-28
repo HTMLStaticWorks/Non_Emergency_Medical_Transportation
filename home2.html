@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalCare | Premium Healthcare Mobility Solutions</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Drawer Overlay -->
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About Us</a>
+        <a href="home2.html" class="mobile-link">Home 2</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="blog.html" class="mobile-link">Blog</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="dashboard.html" class="mobile-link">Dashboard</a>
+        <a href="login.html" class="mobile-link">Login</a>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <a href="index.html" class="logo"><i class="logo-icon">A</i> VitalCare</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="home2.html" class="nav-link active">Home 2</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="nav-link hide-mobile">Login</a>
+                <button id="rtl-toggle" class="toggle-btn"><i class="fa-solid fa-right-left"></i></button>
+                <button id="theme-toggle" class="toggle-btn">🌙</button>
+                <a href="register.html" class="btn btn-primary hide-mobile">Book a Ride</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Alternative Hero Section (Split Screen Variation) -->
+    <section class="section" style="padding: 100px 0; background-color: var(--bg-gray);">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px; align-items: center;">
+                <div>
+                    <h1 style="font-size: 3.5rem; line-height: 1.1; margin-bottom: 1.5rem;">Your Health, <br><span
+                            style="color: var(--primary);">Our Priority.</span></h1>
+                    <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 2rem;">Experience the gold
+                        standard in non-emergency medical transportation. Helping you maintain your independence, one
+                        ride at a time.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="dashboard.html" class="btn btn-primary">Book Ride</a>
+                        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <div
+                        style="width: 100%; height: 400px; background: linear-gradient(45deg, var(--primary), var(--secondary)); border-radius: 30px; position: relative; overflow: hidden;">
+                        <div
+                            style="position: absolute; inset: 0; background: rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: white;">
+                            <i class="fa-solid fa-ambulance"></i>
+                        </div>
+                    </div>
+                    <div
+                        style="position: absolute; bottom: -20px; left: -20px; background: var(--bg-card); padding: 20px; border-radius: 12px; box-shadow: var(--shadow-lg); border-left: 4px solid var(--accent); transition: var(--transition);">
+                        <div style="font-weight: 800; color: var(--primary);">5.0 ⭐ Rating</div>
+                        <div style="font-size: 0.9rem; color: var(--text-muted);">From 2,000+ happy patients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Different Service Layout (Alternate Grid) -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tailored For You</h2>
+                <p>Simple and convenient transportation booking.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <div
+                    style="padding: 40px; border: 1px solid var(--border-color); border-radius: 12px; text-align: left; background: var(--bg-card); transition: var(--transition);">
+                    <i class="fa-solid fa-wheelchair"
+                        style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 15px;">Mobility Matters</h3>
+                    <p class="text-muted">Specialized vehicles for wheelchair and stretcher support. We handle all
+                        logistics with zero fuss.</p>
+                </div>
+                <div
+                    style="padding: 40px; border: 1px solid var(--border-color); border-radius: 12px; text-align: left; background: var(--bg-card); transition: var(--transition);">
+                    <i class="fa-solid fa-calendar-alt"
+                        style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 15px;">Reliable Scheduling</h3>
+                    <p class="text-muted">Set up recurring rides for weekly clinics or therapy sessions. Our system
+                        stays on top of your schedule.</p>
+                </div>
+                <div
+                    style="padding: 40px; border: 1px solid var(--border-color); border-radius: 12px; text-align: left; background: var(--bg-card); transition: var(--transition);">
+                    <i class="fa-solid fa-user-shield"
+                        style="font-size: 2.5rem; color: var(--accent); margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 15px;">Trusted Professionals</h3>
+                    <p class="text-muted">All drivers undergo periodic background checks and medical training to serve
+                        you better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section with alternate layout -->
+    <section class="section" style="background-color: var(--bg-gray);">
+        <div class="container">
+            <div style="display: flex; flex-direction: row-reverse; flex-wrap: wrap; gap: 50px; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="img/fleet.png" alt="Fleet" style="border-radius: 20px; box-shadow: var(--shadow-lg);">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">State-of-the-art Fleet</h2>
+                    <p style="margin-bottom: 1.5rem;">Our vehicles are not just cars; they are extensions of our care.
+                        Equipped with the latest safety technology and accessibility features.</p>
+                    <ul class="text-muted" style="margin-bottom: 2rem;">
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check-circle"
+                                style="color: var(--secondary);"></i> Climate controlled cabins</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check-circle"
+                                style="color: var(--secondary);"></i> GPS Enabled and tracked</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check-circle"
+                                style="color: var(--secondary);"></i> Comfortable, sanitized seating</li>
+                        <li style="margin-bottom: 10px;"><i class="fa-solid fa-check-circle"
+                                style="color: var(--secondary);"></i> Professional medical assistants</li>
+                    </ul>
+                    <a href="services.html" class="btn btn-outline">Explore Our Fleet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION 1: Intelligent Tracking -->
+    <section class="section tracking-v2">
+        <div class="container">
+            <div class="tracking-wrapper">
+                <div class="tracking-visual">
+                    <div class="tracking-glow"></div>
+                    <img src="img/tracking_app.png" alt="Real-time Tracking App" class="tracking-mockup">
+                </div>
+                <div class="tracking-content">
+                    <span class="badge"
+                        style="background: rgba(45, 212, 191, 0.1); color: var(--secondary); padding: 8px 15px; border-radius: 30px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; display: inline-block;">Next-Gen
+                        Mobility</span>
+                    <h2>Intelligent <span style="color: var(--secondary);">Tracking</span></h2>
+                    <p class="text-muted" style="font-size: 1.2rem;">Never wonder where your transport is. Our
+                        state-of-the-art app provides complete transparency for patients and their loved ones.</p>
+
+                    <div class="tracking-feature-list">
+                        <div class="tracking-feature-item">
+                            <div class="tracking-feature-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+                            <div>
+                                <h4>Real-Time Precision</h4>
+                                <p class="text-muted" style="font-size: 0.9rem;">Track your driver's exact location and
+                                    live ETA on our interactive map.</p>
+                            </div>
+                        </div>
+                        <div class="tracking-feature-item">
+                            <div class="tracking-feature-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+                            <div>
+                                <h4>Arrival Notifications</h4>
+                                <p class="text-muted" style="font-size: 0.9rem;">Instant SMS alerts when your driver is
+                                    5 minutes away and upon arrival.</p>
+                            </div>
+                        </div>
+                        <div class="tracking-feature-item">
+                            <div class="tracking-feature-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                            <div>
+                                <h4>Caregiver Sharing</h4>
+                                <p class="text-muted" style="font-size: 0.9rem;">Share your trip progress securely with
+                                    family members and clinicians.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION 2: Comfort Sanctuary -->
+    <section class="section sanctuary-section">
+        <div class="container">
+            <div class="sanctuary-grid">
+                <div class="sanctuary-content">
+                    <span class="badge"
+                        style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary); padding: 8px 15px; border-radius: 30px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; display: inline-block;">Premium
+                        Experience</span>
+                    <h2 style="font-size: 3rem; line-height: 1.1; margin-bottom: 25px;">The <span
+                            style="color: var(--primary);">Comfort</span> Sanctuary</h2>
+                    <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 30px;">We believe every journey
+                        should be treated with the same level of care as the destination itself. Our interiors are
+                        designed as a sanctuary of peace and comfort.</p>
+
+                    <ul style="margin-bottom: 40px;">
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">
+                            <i class="fa-solid fa-couch"
+                                style="color: var(--primary); font-size: 1.5rem; margin-top: 5px;"></i>
+                            <div>
+                                <span style="font-weight: 700; display: block;">Ergonomic Seating</span>
+                                <span class="text-muted">Orthopedic-grade cushions designed for long-ride support and
+                                    pressure relief.</span>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">
+                            <i class="fa-solid fa-wind"
+                                style="color: var(--primary); font-size: 1.5rem; margin-top: 5px;"></i>
+                            <div>
+                                <span style="font-weight: 700; display: block;">HEPA-Filtered Cabins</span>
+                                <span class="text-muted">Medical-grade air filtration ensures a clean, sterile
+                                    environment for every passenger.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a href="register.html" class="btn btn-primary">Experience VitalCare</a>
+                </div>
+
+                <div class="sanctuary-visual">
+                    <img src="img/vehicle_comfort.png" alt="Interior Comfort" class="sanctuary-image">
+
+                    <div class="sanctuary-badge-card">
+                        <div style="font-size: 1.5rem; color: var(--accent); margin-bottom: 5px;"><i
+                                class="fa-solid fa-award"></i></div>
+                        <div style="font-weight: 800; color: var(--primary);">Safety Award 2024</div>
+                        <div style="font-size: 0.8rem; color: var(--text-muted);">Rated #1 for Patient Comfort</div>
+                    </div>
+
+                    <div class="sanctuary-glass-footer">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <div style="font-size: 2rem;"><i class="fa-solid fa-hospital-user"></i></div>
+                            <div>
+                                <div style="font-weight: 700;">Sterile & Sanitized</div>
+                                <div style="font-size: 0.8rem; opacity: 0.8;">Post-each-trip deep clean protocol</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hotspots -->
+                    <div class="hotspot" style="top: 30%; left: 40%;" data-label="Adaptive Climate Control"></div>
+                    <div class="hotspot" style="top: 60%; left: 20%;" data-label="Secure Secure-Latch System"></div>
+                    <div class="hotspot" style="top: 50%; left: 75%;" data-label="Padded Privacy Partitions"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section (Mini) -->
+    <section class="section">
+        <div class="container">
+            <div
+                style="background: var(--primary); padding: 40px; border-radius: 12px; color: white; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;">
+                <div>
+                    <h2>Ready for your next appointment?</h2>
+                    <p style="opacity: 0.8;">Don't wait for the last minute. Book with VitalCare today.</p>
+                </div>
+                <div style="display: flex; gap: 15px;">
+                    <a href="dashboard.html" class="btn btn-secondary">Go to Dashboard</a>
+                    <a href="tel:1234567890" class="btn btn-outline" style="border-color: white; color: white;">Call
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="text-align: left;">
+                    <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+                    <p class="text-muted">Helping you stay mobile and healthy.</p>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a>Senior Transport</a></li>
+                        <li><a>Medication Delivery</a></li>
+                        <li><a>Clinical Transfer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@VitalCare.med">Email Support</a></li>
+                        <li><a>Live Chat</a></li>
+                        <li><a>FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VitalCare Medical Transport</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

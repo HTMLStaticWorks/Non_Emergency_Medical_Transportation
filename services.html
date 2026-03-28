@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | VitalCare Medical Transport</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Drawer Overlay -->
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="about.html" class="mobile-link">About Us</a>
+        <a href="home2.html" class="mobile-link">Home 2</a>
+        <a href="services.html" class="mobile-link">Services</a>
+        <a href="blog.html" class="mobile-link">Blog</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="dashboard.html" class="mobile-link">Dashboard</a>
+        <a href="login.html" class="mobile-link">Login</a>
+    </div>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div id="hamburger" class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <a href="index.html" class="logo"><i class="logo-icon">A</i> VitalCare</a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="home2.html" class="nav-link">Home 2</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="login.html" class="nav-link hide-mobile">Login</a>
+                <button id="rtl-toggle" class="toggle-btn" title="Switch Language Direction"><i
+                        class="fa-solid fa-right-left"></i></button>
+                <button id="theme-toggle" class="toggle-btn" title="Toggle theme">🌙</button>
+                <a href="register.html" class="btn btn-primary hide-mobile">Book a Ride</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Section -->
+    <section class="services-hero">
+        <div class="container">
+            <h1>Compassionate Mobility Solutions</h1>
+            <p>Experience safe, reliable, and professional medical transportation tailored for your specific healthcare
+                needs.</p>
+        </div>
+    </section>
+
+    <!-- Services Detail -->
+    <section class="section" style="padding-top: 100px;">
+        <div class="container">
+            <div style="display: flex; flex-direction: column; gap: 40px;">
+
+                <!-- Service Item 1: Senior Friendly -->
+                <div class="service-item-v2 reveal-v2"
+                    style="display: flex; flex-wrap: wrap; gap: 80px; align-items: center;">
+                    <div style="flex: 1; min-width: 350px;">
+                        <span class="service-content-badge">For Seniors</span>
+                        <h2 style="font-size: 3rem; margin-bottom: 25px;">Senior Friendly Transportation</h2>
+                        <p style="margin-bottom: 2rem; font-size: 1.2rem; color: var(--text-muted);">Maintaining
+                            independence is vital. Our drivers provide doorway-to-doctor-office assistance, ensuring
+                            seniors
+                            feel supported and safe throughout their journey.</p>
+                        <div class="feature-list-check">
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Physical assistance at both ends of the trip.</span>
+                            </div>
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Drivers trained in geriatric sensitivity and care.</span>
+                            </div>
+                        </div>
+                        <a href="dashboard.html" class="btn btn-primary" style="margin-top: 30px;">Schedule Care</a>
+                    </div>
+                    <div style="flex: 1; min-width: 350px;">
+                        <div class="service-image-mask">
+                            <img src="img/senior_service.png" alt="Senior Care">
+                            <div class="service-tag-floating">Compassionate Support</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Item 2: Medical Appointments -->
+                <div class="service-item-v2 reveal-v2"
+                    style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 80px; align-items: center; animation-delay: 0.2s;">
+                    <div style="flex: 1; min-width: 350px;">
+                        <span class="service-content-badge"
+                            style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary);">Reliable
+                            Priority</span>
+                        <h2 style="font-size: 3rem; margin-bottom: 25px;">Medical Appointment Rides</h2>
+                        <p style="margin-bottom: 2rem; font-size: 1.2rem; color: var(--text-muted);">Punctuality can
+                            actually save lives. We guarantee on-time arrivals for chemotherapy, dialysis, and routine
+                            specialist visits.</p>
+                        <div class="feature-list-check">
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check" style="color: var(--primary);"></i>
+                                <span>Real-time GPS tracking for healthcare facilities.</span>
+                            </div>
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check" style="color: var(--primary);"></i>
+                                <span>Wait-and-return options for short appointments.</span>
+                            </div>
+                        </div>
+                        <a href="dashboard.html" class="btn btn-secondary" style="margin-top: 30px;">Book Priority
+                            Ride</a>
+                    </div>
+                    <div style="flex: 1; min-width: 350px;">
+                        <div class="service-image-mask">
+                            <img src="img/appointment_service.png" alt="Medical Appointment">
+                            <div class="service-tag-floating" style="background: var(--secondary);">Punctual Guarantee
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Service Item 3: Specialized Loading -->
+                <div class="service-item-v2 reveal-v2"
+                    style="display: flex; flex-wrap: wrap; gap: 80px; align-items: center; animation-delay: 0.4s;">
+                    <div style="flex: 1; min-width: 350px;">
+                        <span class="service-content-badge">Advanced Access</span>
+                        <h2 style="font-size: 3rem; margin-bottom: 25px;">Specialized Loading Systems</h2>
+                        <p style="margin-bottom: 2rem; font-size: 1.2rem; color: var(--text-muted);">Our vehicles are
+                            equipped with hydraulic lifts and ramp systems designed for bariatric wheelchairs and
+                            medical
+                            stretchers.</p>
+                        <div class="feature-list-check">
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Heavy-duty hydraulic lifts (up to 800 lbs).</span>
+                            </div>
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Multi-point wheelchair securement for maximum safety.</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: 30px;">Inquire About Fleet</a>
+                    </div>
+                    <div style="flex: 1; min-width: 350px;">
+                        <div class="service-image-mask">
+                            <img src="img/wheelchair_service.png" alt="Wheelchair Loading">
+                            <div class="service-tag-floating">Safe & Secure</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Service Item 4: Hospital Discharge -->
+                <div class="service-item-v2 reveal-v2"
+                    style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 80px; align-items: center; animation-delay: 0.6s;">
+                    <div style="flex: 1; min-width: 350px;">
+                        <span class="service-content-badge"
+                            style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary);">Care
+                            Continuity</span>
+                        <h2 style="font-size: 3rem; margin-bottom: 25px;">Safe Return Home Protocols</h2>
+                        <p style="margin-bottom: 2rem; font-size: 1.2rem; color: var(--text-muted);">Transitioning from
+                            hospital to home can be stressful. We ensure a seamless handover from nurses to our
+                            transport
+                            team.</p>
+                        <div class="feature-list-check">
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check" style="color: var(--primary);"></i>
+                                <span>Door-to-door escort into your living area.</span>
+                            </div>
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check" style="color: var(--primary);"></i>
+                                <span>Compassionate handling of discharge paperwork.</span>
+                            </div>
+                        </div>
+                        <a href="dashboard.html" class="btn btn-primary" style="margin-top: 30px;">Plan Discharge</a>
+                    </div>
+                    <div style="flex: 1; min-width: 350px;">
+                        <div class="service-image-mask">
+                            <img src="img/discharge_service.png" alt="Hospital Discharge">
+                            <div class="service-tag-floating">Seamless Care</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW Service Item 5: Chronic Care Commute -->
+                <div class="service-item-v2 reveal-v2"
+                    style="display: flex; flex-wrap: wrap; gap: 80px; align-items: center; animation-delay: 0.8s;">
+                    <div style="flex: 1; min-width: 350px;">
+                        <span class="service-content-badge">Dedicated Support</span>
+                        <h2 style="font-size: 3rem; margin-bottom: 25px;">Chronic Care Logistics</h2>
+                        <p style="margin-bottom: 2rem; font-size: 1.2rem; color: var(--text-muted);">For long-term
+                            treatments like dialysis or radiation therapy, we provide a consistent schedule and driver
+                            relationship.</p>
+                        <div class="feature-list-check">
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Recurring booking with standing reservations.</span>
+                            </div>
+                            <div class="feature-check-item">
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Same-driver assignments for patient comfort.</span>
+                            </div>
+                        </div>
+                        <a href="dashboard.html" class="btn btn-secondary" style="margin-top: 30px;">Manage Recurring
+                            Rides</a>
+                    </div>
+                    <div style="flex: 1; min-width: 350px;">
+                        <div class="service-image-mask">
+                            <img src="img/recurring_service.png" alt="Dialysis Transport">
+                            <div class="service-tag-floating">Always Reliable</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="text-align: left;">
+                    <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+                    <p class="text-muted">Safe Rides, Caring Drivers.</p>
+                </div>
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 VitalCare Medical Transport</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
