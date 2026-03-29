@@ -29,6 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleHamburgerMenu();
         });
 
+        const closeBtn = document.getElementById('dash-menu-close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => closeHamburgerMenu());
+        }
+
         hamburgerBackdrop.addEventListener('click', () => closeHamburgerMenu());
 
         document.addEventListener('keydown', (e) => {
