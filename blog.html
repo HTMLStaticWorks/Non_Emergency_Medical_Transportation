@@ -24,15 +24,19 @@
 
     <!-- Mobile Drawer -->
     <div id="mobile-drawer" class="mobile-drawer">
-        <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+        <div class="drawer-header">
+            <a href="index.html" class="logo"><i class="logo-icon">A</i> VitalCare</a>
+            <button type="button" id="drawer-close" class="toggle-btn drawer-close" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
         <a href="index.html" class="mobile-link">Home</a>
-        <a href="about.html" class="mobile-link">About Us</a>
         <a href="home2.html" class="mobile-link">Home 2</a>
+        <a href="about.html" class="mobile-link">About Us</a>
         <a href="services.html" class="mobile-link">Services</a>
         <a href="blog.html" class="mobile-link">Blog</a>
         <a href="contact.html" class="mobile-link">Contact</a>
         <a href="dashboard.html" class="mobile-link">Dashboard</a>
-        <a href="login.html" class="mobile-link">Login</a>
     </div>
 
     <!-- Navigation -->
@@ -42,15 +46,14 @@
             <a href="index.html" class="logo"><i class="logo-icon">A</i> VitalCare</a>
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
                 <a href="home2.html" class="nav-link">Home 2</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="services.html" class="nav-link">Services</a>
                 <a href="blog.html" class="nav-link active">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="dashboard.html" class="nav-link">Dashboard</a>
             </nav>
             <div class="nav-actions">
-                <a href="login.html" class="nav-link hide-mobile">Login</a>
                 <button id="rtl-toggle" class="toggle-btn"><i class="fa-solid fa-right-left"></i></button>
                 <button id="theme-toggle" class="toggle-btn">🌙</button>
                 <a href="register.html" class="btn btn-primary hide-mobile">Book a Ride</a>
@@ -127,6 +130,16 @@
                     <h3>Senior Wellness</h3>
                     <span>24 Articles</span>
                 </div>
+                <div class="category-card-v3">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h3>Scheduling Tips</h3>
+                    <span>10 Articles</span>
+                </div>
+                <div class="category-card-v3">
+                    <i class="fa-solid fa-wheelchair"></i>
+                    <h3>Accessibility</h3>
+                    <span>9 Articles</span>
+                </div>
             </div>
         </div>
     </section>
@@ -141,7 +154,7 @@
                         <img src="img/blog_choosing.png" alt="Medical Transport"
                             style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
                     </div>
-                    <div style="padding: 24px;">
+                    <div class="blog-post-card-content" style="padding: 24px;">
                         <div style="display: flex; gap: 10px; margin-bottom: 15px;">
                             <span
                                 style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 5px; text-transform: uppercase;">Healthcare
@@ -163,7 +176,7 @@
                         <img src="img/senior_service.png" alt="Mobility Benefits"
                             style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
                     </div>
-                    <div style="padding: 24px;">
+                    <div class="blog-post-card-content" style="padding: 24px;">
                         <div style="display: flex; gap: 10px; margin-bottom: 15px;">
                             <span
                                 style="background: rgba(var(--secondary-rgb), 0.1); color: var(--secondary); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 5px; text-transform: uppercase;">Mobility
@@ -186,7 +199,7 @@
                         <img src="img/appointment_service.png" alt="Punctuality"
                             style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
                     </div>
-                    <div style="padding: 24px;">
+                    <div class="blog-post-card-content" style="padding: 24px;">
                         <div style="display: flex; gap: 10px; margin-bottom: 15px;">
                             <span
                                 style="background: rgba(var(--accent-rgb), 0.1); color: var(--accent); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 5px; text-transform: uppercase;">Wellness</span>
@@ -207,7 +220,7 @@
                         <img src="img/recurring_service.png" alt="Recurring Appointments"
                             style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
                     </div>
-                    <div style="padding: 24px;">
+                    <div class="blog-post-card-content" style="padding: 24px;">
                         <div style="display: flex; gap: 10px; margin-bottom: 15px;">
                             <span
                                 style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary); font-size: 0.75rem; font-weight: 800; padding: 4px 10px; border-radius: 5px; text-transform: uppercase;">Scheduler
@@ -249,23 +262,63 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container text-center">
             <div class="footer-grid">
+                <!-- Column 1 -->
                 <div class="footer-col" style="text-align: left;">
-                    <div class="logo"><i class="logo-icon">A</i> VitalCare</div>
+                    <div class="logo" style="margin-bottom: 15px;">
+                        <i class="logo-icon">A</i> VitalCare
+                    </div>
+                    <p class="text-muted" style="margin-bottom: 20px;">Safe Rides, Caring Drivers. The gold standard in
+                        medical mobility transportation.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
                 </div>
+
+                <!-- Column 2 -->
                 <div class="footer-col" style="text-align: left;">
-                    <h4>Links</h4>
+                    <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
+
+                <!-- Column 3 -->
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Senior Transport</a></li>
+                        <li><a href="services.html">Medical Rides</a></li>
+                        <li><a href="services.html">Recurring Schedules</a></li>
+                        <li><a href="services.html">Emergency Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="footer-col" style="text-align: left;">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fa-solid fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fa-solid fa-envelope"></i> support@VitalCare-transport.com</li>
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Medical Plaza, City, State</li>
+                    </ul>
+                </div>
             </div>
+
             <div class="footer-bottom">
-                <p>&copy; 2024 VitalCare Medical Transport</p>
+                <p>&copy; 2026 VitalCare Medical Transport. All Rights Reserved.</p>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
             </div>
         </div>
     </footer>

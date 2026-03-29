@@ -24,17 +24,21 @@
 
     <!-- Mobile Drawer -->
     <div id="mobile-drawer" class="mobile-drawer">
-        <div class="logo">
-            <i class="logo-icon">A</i> VitalCare
+        <div class="drawer-header">
+            <a href="index.html" class="logo">
+                <i class="logo-icon">A</i> VitalCare
+            </a>
+            <button type="button" id="drawer-close" class="toggle-btn drawer-close" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
         </div>
         <a href="index.html" class="mobile-link">Home</a>
-        <a href="about.html" class="mobile-link">About Us</a>
         <a href="home2.html" class="mobile-link">Home 2</a>
+        <a href="about.html" class="mobile-link">About Us</a>
         <a href="services.html" class="mobile-link">Services</a>
         <a href="blog.html" class="mobile-link">Blog</a>
         <a href="contact.html" class="mobile-link">Contact</a>
         <a href="dashboard.html" class="mobile-link">Dashboard</a>
-        <a href="login.html" class="mobile-link">Login</a>
         <div class="drawer-item mobile-theme-toggle" id="mobile-theme-toggle">
             <span>🌙</span> Theme
         </div>
@@ -56,8 +60,8 @@
 
             <nav class="nav-menu">
                 <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
                 <a href="home2.html" class="nav-link">Home 2</a>
+                <a href="about.html" class="nav-link">About</a>
                 <a href="services.html" class="nav-link">Services</a>
                 <a href="blog.html" class="nav-link">Blog</a>
                 <a href="contact.html" class="nav-link">Contact</a>
@@ -65,7 +69,6 @@
             </nav>
 
             <div class="nav-actions">
-                <a href="login.html" class="nav-link hide-mobile">Login</a>
                 <button id="rtl-toggle" class="toggle-btn" title="Switch Language Direction">
                     <i class="fa-solid fa-right-left"></i>
                 </button>
@@ -78,7 +81,7 @@
     </header>
 
     <!-- Advanced Hero Section V3: Interactive Spectrum -->
-    <section class="hero-v2">
+    <section class="hero-v2" id="home1-hero">
         <!-- animated Mesh Background -->
         <div class="hero-bg-mesh">
             <div class="mesh-blob blob-1"></div>
@@ -98,14 +101,13 @@
                         <span class="highlight-accent">Healthcare</span> <br>
                         <span class="keyword-wrapper">
                             <span class="dynamic-keyword active">Mobility</span>
-                            <span class="dynamic-keyword">Compassion</span>
                             <span class="dynamic-keyword">Support</span>
                         </span>
                     </h1>
                     <p>Experience a new dimension of care. We combine cutting-edge logistics with human-centered service
                         to ensure you never miss what matters most.</p>
 
-                    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 50px;">
+                    <div class="hero-cta" style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 50px;">
                         <a href="dashboard.html" class="btn btn-primary"
                             style="padding: 18px 45px; font-size: 1.1rem; border-radius: 50px; box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.3);">Book
                             Now <i class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i></a>
@@ -182,7 +184,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="section">
+    <section class="section" id="home1-services">
         <div class="container text-center">
             <div class="section-header">
                 <h2>Our Premium Services</h2>
@@ -393,14 +395,14 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section">
+    <section class="section" id="home1-ready">
         <div class="container">
             <div
                 style="background: linear-gradient(135deg, var(--primary), var(--secondary)); border-radius: 20px; padding: 60px; color: white; text-align: center;">
                 <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Schedule Your Ride?</h2>
                 <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem;">Join thousands of satisfied patients
                     who trust us with their mobility needs.</p>
-                <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+                <div class="ready-cta-actions" style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
                     <a href="dashboard.html" class="btn btn-secondary"
                         style="background: white; color: var(--primary); padding: 15px 40px;">Book Now</a>
                     <a href="tel:1234567890" class="btn btn-outline" style="border-color: white; color: white;">Call Us:
@@ -421,15 +423,11 @@
                     </div>
                     <p class="text-muted" style="margin-bottom: 20px;">Safe Rides, Caring Drivers. The gold standard in
                         medical mobility transportation.</p>
-                    <div style="display: flex; gap: 15px;">
-                        <a href="#" style="font-size: 1.2rem; color: var(--primary);"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="#" style="font-size: 1.2rem; color: var(--primary);"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a href="#" style="font-size: 1.2rem; color: var(--primary);"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="#" style="font-size: 1.2rem; color: var(--primary);"><i
-                                class="fa-brands fa-instagram"></i></a>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
 
@@ -468,7 +466,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 VitalCare Medical Transport. All Rights Reserved.</p>
+                <p>&copy; 2026 VitalCare Medical Transport. All Rights Reserved.</p>
                 <div style="display: flex; gap: 20px;">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
