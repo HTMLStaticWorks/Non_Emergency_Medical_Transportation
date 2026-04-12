@@ -15,6 +15,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <style>
+        @media (min-width: 1024px) {
+            #home1-services .card-grid {
+                display: flex !important;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 25px;
+            }
+
+            #home1-services .card {
+                flex: 0 1 280px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -75,13 +90,14 @@
                 <button id="theme-toggle" class="toggle-btn" title="Toggle theme">
                     🌙
                 </button>
-                <a href="register.html" class="btn btn-primary hide-mobile Pulse">Book a Ride</a>
+                <a href="register.html" class="btn btn-primary hide-mobile Pulse">Sign Up</a>
             </div>
         </div>
     </header>
 
     <!-- Advanced Hero Section V3: Interactive Spectrum -->
-    <section class="hero-v2" id="home1-hero">
+    <section class="hero-v2" id="home1-hero"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('img/hero_home1_new.png'); background-size: cover; background-position: center; background-attachment: fixed; color: white;">
         <!-- animated Mesh Background -->
         <div class="hero-bg-mesh">
             <div class="mesh-blob blob-1"></div>
@@ -90,24 +106,27 @@
         </div>
 
         <div class="container">
-            <div class="hero-grid">
+            <div class="hero-grid" style="display: block; text-align: center;">
                 <!-- Text Column -->
-                <div class="hero-text-content">
-                    <div class="badge">
+                <div class="hero-text-content"
+                    style="max-width: 800px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <div class="badge" style="background: rgba(255, 255, 255, 0.15); color: white;">
                         <i class="fa-solid fa-sparkles"></i> Next-Gen Medical Mobility
                     </div>
-                    <h1>
+                    <h1 style="color: white;">
                         Elevating Your <br>
-                        <span class="highlight-accent">Healthcare</span> <br>
-                        <span class="keyword-wrapper">
+                        <span class="highlight-accent" style="color: var(--secondary);">Healthcare</span> <br>
+                        <span class="keyword-wrapper" style="text-align: center;">
                             <span class="dynamic-keyword active">Mobility</span>
                             <span class="dynamic-keyword">Support</span>
                         </span>
                     </h1>
-                    <p>Experience a new dimension of care. We combine cutting-edge logistics with human-centered service
+                    <p style="color: rgba(255, 255, 255, 0.9); margin-left: auto; margin-right: auto;">Experience a new
+                        dimension of care. We combine cutting-edge logistics with human-centered service
                         to ensure you never miss what matters most.</p>
 
-                    <div class="hero-cta" style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 50px;">
+                    <div class="hero-cta"
+                        style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 50px; justify-content: center;">
                         <a href="dashboard.html" class="btn btn-primary"
                             style="padding: 18px 45px; font-size: 1.1rem; border-radius: 50px; box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.3);">Book
                             Now <i class="fa-solid fa-arrow-right" style="margin-left: 10px;"></i></a>
@@ -117,66 +136,21 @@
                     </div>
 
                     <!-- Micro Stats -->
-                    <div style="display: flex; gap: 40px;">
+                    <div style="display: flex; gap: 40px; justify-content: center;">
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <div
                                 style="width: 40px; height: 40px; border: 2px solid var(--secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--secondary); font-size: 0.9rem;">
                                 <i class="fa-solid fa-check"></i>
                             </div>
-                            <span style="font-weight: 700; font-size: 0.9rem;">HIPAA Compliant</span>
+                            <span style="font-weight: 700; font-size: 0.9rem; color: white;">HIPAA Compliant</span>
                         </div>
                         <div style="display: flex; align-items: center; gap: 10px;">
                             <div
                                 style="width: 40px; height: 40px; border: 2px solid var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 0.9rem;">
                                 <i class="fa-solid fa-bolt"></i>
                             </div>
-                            <span style="font-weight: 700; font-size: 0.9rem;">Real-time Tracking</span>
+                            <span style="font-weight: 700; font-size: 0.9rem; color: white;">Real-time Tracking</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Layered Visual Column -->
-                <div class="layered-visual">
-                    <!-- Main Card -->
-                    <div class="glass-card-main" id="heroMainCard">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 25px;">
-                            <div
-                                style="background: rgba(var(--primary-rgb), 0.1); color: var(--primary); padding: 5px 12px; border-radius: 8px; font-size: 0.75rem; font-weight: 800;">
-                                ACTIVE TRIP</div>
-                            <div style="color: var(--secondary); font-weight: 700; font-size: 0.8rem;">ETA: 8 MIN</div>
-                        </div>
-                        <h4 style="margin-bottom: 15px;">To: General Hospital</h4>
-                        <div
-                            style="height: 120px; background: rgba(var(--primary-rgb), 0.05); border-radius: 15px; margin-bottom: 20px; border: 1px dashed var(--border-color); display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 0.8rem;">
-                            <i class="fa-solid fa-map-location-dot"
-                                style="font-size: 2rem; opacity: 0.3; margin-right: 15px;"></i> Live Route Preview...
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 12px;">
-                            <div
-                                style="width: 40px; height: 40px; background: var(--bg-gray); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                <i class="fa-solid fa-user-nurse"></i>
-                            </div>
-                            <div>
-                                <div style="font-weight: 700; font-size: 0.9rem;">Nurse Sarah L.</div>
-                                <div style="font-size: 0.75rem; color: var(--text-muted);">Medical Attendant</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Floating Sub Cards -->
-                    <div class="floating-sub-card card-top">
-                        <i class="fa-solid fa-circle-check" style="color: var(--secondary);"></i>
-                        <span style="font-weight: 700; font-size: 0.85rem;">Certified Drivers</span>
-                    </div>
-
-                    <div class="floating-sub-card card-bottom">
-                        <i class="fa-solid fa-star" style="color: var(--accent);"></i>
-                        <span style="font-weight: 700; font-size: 0.85rem;">4.9 Patient Rating</span>
-                    </div>
-
-                    <div class="floating-sub-card card-mid">
-                        <i class="fa-solid fa-heart" style="color: #ef4444;"></i>
-                        <span style="font-weight: 700; font-size: 0.85rem;">24/7 Care</span>
                     </div>
                 </div>
             </div>
@@ -191,38 +165,86 @@
                 <p class="text-muted">Specialized transportation solutions tailored to individual needs.</p>
             </div>
 
-            <div class="card-grid">
+            <div class="card-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
                 <!-- Senior Transport -->
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-person-cane"></i></div>
-                    <h3>Senior Transportation</h3>
-                    <p>Dedicated assistance for elderly passengers, ensuring comfort and safety throughout the journey.
-                    </p>
-                    <a href="services.html" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="card"
+                    style="background: white; padding: 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; text-align: center; border: 1px solid #eee; overflow: hidden;">
+                    <div style="width: 100%; height: 160px; border-bottom: 1px solid #eee;">
+                        <img src="img/Senior Transportation.png" alt="Senior Transportation"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div
+                        style="padding: 20px; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                        <h3
+                            style="min-height: 2.5em; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; font-size: 1.15rem; width: 100%; line-height: 1.2; color: #111;">
+                            Senior Transportation</h3>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Dedicated
+                            assistance for elderly passengers, ensuring comfort and safety throughout the journey.</p>
+                        <a href="services.html" class="card-link"
+                            style="color: var(--primary); font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 5px;">Learn
+                            More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <!-- Medical Rides -->
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-hospital-user"></i></div>
-                    <h3>Medical Appointment Rides</h3>
-                    <p>Punctual pick-ups and drop-offs for dialysis, therapy, or routine doctor visits.</p>
-                    <a href="services.html" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="card"
+                    style="background: white; padding: 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; text-align: center; border: 1px solid #eee; overflow: hidden;">
+                    <div style="width: 100%; height: 160px; border-bottom: 1px solid #eee;">
+                        <img src="img/Medical Appointment Rides.png" alt="Medical Appointment Rides"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div
+                        style="padding:  23px; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                        <h3
+                            style="white-space: nowrap; min-height: 2.5em; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; font-size: 1.05rem; width: 100%; line-height: 1.2; color: #111;">
+                            Medical Appointment Rides</h3>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Punctual
+                            pick-ups and drop-offs for dialysis, therapy, or routine doctor visits.</p>
+                        <a href="services.html" class="card-link"
+                            style="color: var(--primary); font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 5px;">Learn
+                            More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <!-- Recurring Schedules -->
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-calendar-check"></i></div>
-                    <h3>Recurring Schedules</h3>
-                    <p>Easily manage repeated appointments with our automated scheduling system.</p>
-                    <a href="services.html" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="card"
+                    style="background: white; padding: 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; text-align: center; border: 1px solid #eee; overflow: hidden;">
+                    <div style="width: 100%; height: 160px; border-bottom: 1px solid #eee;">
+                        <img src="img/Recurring_Schedules.png" alt="Recurring Schedules"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div
+                        style="padding: 21px; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                        <h3
+                            style="min-height: 2.5em; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; font-size: 1.15rem; width: 100%; line-height: 1.2; color: #111;">
+                            Recurring Schedules</h3>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Easily manage
+                            repeated appointments with our automated scheduling system.</p>
+                        <a href="services.html" class="card-link"
+                            style="color: var(--primary); font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 5px;">Learn
+                            More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
 
                 <!-- Real-Time Tracking -->
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
-                    <h3>Real-Time Tracking</h3>
-                    <p>Monitor your ride's location in real-time through our advanced GPS tracking interface.</p>
-                    <a href="services.html" class="card-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                <div class="card"
+                    style="background: white; padding: 0; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; text-align: center; border: 1px solid #eee; overflow: hidden;">
+                    <div style="width: 100%; height: 160px; border-bottom: 1px solid #eee;">
+                        <img src="img/Real-Time Tracking.png" alt="Real-Time Tracking"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div
+                        style="padding: 20px; display: flex; flex-direction: column; align-items: center; width: 100%;">
+                        <h3
+                            style="min-height: 2.5em; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; font-size: 1.15rem; width: 100%; line-height: 1.2; color: #111;">
+                            Real-Time Tracking</h3>
+                        <p style="color: #666; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.4;">Monitor your
+                            ride's location in real-time through our advanced GPS tracking interface.</p>
+                        <a href="services.html" class="card-link"
+                            style="color: var(--primary); font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; gap: 5px;">Learn
+                            More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

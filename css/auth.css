@@ -165,6 +165,48 @@ body.auth-body {
     background-color: #4B5563;
 }
 
+.btn-apple {
+    background-color: #000000;
+}
+
+.btn-apple:hover {
+    background-color: #333333;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.remember-me {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: normal;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.remember-me input {
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    cursor: pointer;
+    accent-color: var(--primary);
+    transform: translateY(-1px);
+}
+
+.forgot-password-link {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
 .auth-footer {
     margin-top: 25px;
     font-size: 0.95rem;

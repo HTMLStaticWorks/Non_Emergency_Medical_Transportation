@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="css/auth.css">
 </head>
 
@@ -39,12 +40,14 @@
                 <input type="email" placeholder="name@example.com" required>
             </div>
             <div class="form-group">
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <label>Password</label>
-                    <a href="#" style="font-size: 0.85rem; color: var(--primary); font-weight: 600;">Forgot
-                        Password?</a>
-                </div>
+                <label>Password</label>
                 <input type="password" placeholder="••••••••" required>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Remember Me
+                    </label>
+                    <a href="#" class="forgot-password-link">Forgot Password?</a>
+                </div>
             </div>
             <button type="submit" class="btn btn-primary btn-auth">Login</button>
         </form>
@@ -54,8 +57,8 @@
         <button class="btn-social btn-google">
             <i class="fa-brands fa-google"></i> Continue with Google
         </button>
-        <button class="btn-social btn-email-social">
-            <i class="fa-solid fa-envelope"></i> Continue with Email
+        <button class="btn-social btn-apple">
+            <i class="fa-brands fa-apple"></i> Continue with Apple
         </button>
 
         <div class="auth-footer">
