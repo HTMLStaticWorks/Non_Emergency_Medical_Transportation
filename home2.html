@@ -16,6 +16,27 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <style>
+        @media (min-width: 768px) and (max-width: 1023px) {
+            #home2-tailored .cards-grid {
+                display: flex !important;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            #home2-tailored .cards-grid > div {
+                flex: 0 0 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+                box-sizing: border-box;
+            }
+
+            #home2-tailored .cards-grid > div:last-child:nth-child(odd) {
+                flex: 0 0 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+            }
+        }
+    </style>
 </head>
 
 <body class="home2-page">
@@ -80,13 +101,13 @@
     </section>
 
     <!-- Different Service Layout (Alternate Grid) -->
-    <section class="section">
+    <section class="section" id="home2-tailored">
         <div class="container">
             <div class="section-header">
                 <h2>Tailored For You</h2>
                 <p>Simple and convenient transportation booking.</p>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div class="cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
                 <div
                     style="padding: 40px; border: 1px solid var(--border-color); border-radius: 12px; text-align: left; background: var(--bg-card); transition: var(--transition);">
                     <i class="fa-solid fa-wheelchair"

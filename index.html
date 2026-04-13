@@ -29,6 +29,37 @@
                 flex: 0 1 280px;
             }
         }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            #home1-testimonials .card-grid {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            #home1-testimonials .card {
+                flex: 0 0 300px;
+                width: 300px;
+                min-height: 220px;
+                justify-content: flex-start;
+            }
+
+            #home1-services .card > div {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                height: 100%;
+            }
+
+            #home1-services .card > div p {
+                flex-grow: 1;
+            }
+
+            #home1-services .card > div .card-link {
+                margin-top: auto;
+            }
+        }
     </style>
 </head>
 
@@ -369,7 +400,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="section" style="background-color: var(--bg-gray);">
+    <section class="section" id="home1-testimonials" style="background-color: var(--bg-gray);">
         <div class="container text-center">
             <div class="section-header">
                 <h2>Real Testimonials</h2>

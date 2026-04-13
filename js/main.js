@@ -52,7 +52,30 @@ document.addEventListener('DOMContentLoaded', () => {
     if (rtlToggle) rtlToggle.addEventListener('click', toggleRTL);
     if (mobileRtlToggle) mobileRtlToggle.addEventListener('click', toggleRTL);
 
-    /* 3. Mobile Menu (Hamburger) */
+    /* 3. Active Nav Link Highlighting */
+    (function setActiveNavLinks() {
+        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        // Desktop nav links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            const linkPage = link.getAttribute('href');
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+        // Mobile drawer links
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            const linkPage = link.getAttribute('href');
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    })();
+
+    /* 4. Mobile Menu (Hamburger) */
     const hamburger = document.getElementById('hamburger');
     const mobileDrawer = document.getElementById('mobile-drawer');
     const drawerOverlay = document.getElementById('drawer-overlay');
@@ -78,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* 4. Hero Animations Trigger */
+    /* 5. Hero Animations Trigger */
     const heroH1 = document.querySelector('.hero h1');
     const heroP = document.querySelector('.hero p');
     const heroBtns = document.querySelector('.hero-btns');
@@ -89,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => heroBtns.classList.add('animate-slideUp'), 1500);
     }
 
-    /* 5. Scroll Animations (Simple Intersection Observer) */
+    /* 6. Scroll Animations (Simple Intersection Observer) */
     const observerOptions = {
         threshold: 0.1
     };
@@ -105,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    /* 6. Advanced Hero Logic */
+    /* 7. Advanced Hero Logic */
     const keywords = document.querySelectorAll('.dynamic-keyword');
     if (keywords.length > 0) {
         let currentIdx = 0;
@@ -136,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* 7. Back to Top Button Injection & Logic */
+    /* 8. Back to Top Button Injection & Logic */
     const backToTopBtn = document.createElement('div');
     backToTopBtn.className = 'back-to-top';
     backToTopBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';

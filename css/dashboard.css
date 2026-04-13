@@ -125,6 +125,74 @@
     font-weight: 600;
 }
 
+/* Next Ride Card */
+.next-ride-card {
+    background-color: var(--bg-card);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    margin-bottom: 40px; /* Gap between this and next section */
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+}
+
+.next-ride-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+.next-ride-body {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.next-ride-date {
+    background: rgba(var(--primary-rgb), 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 80px;
+    color: var(--primary);
+}
+
+.next-ride-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.next-ride-info h4 {
+    margin-bottom: 15px !important; /* Gap between title and details */
+}
+
+.next-ride-btn {
+    margin-top: 10px; /* Extra gap above button */
+}
+
+@media (max-width: 768px) {
+    .next-ride-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .next-ride-body {
+        gap: 20px;
+    }
+    
+    .next-ride-date {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: baseline;
+    }
+}
+
 /* Tabs Content */
 .tab-content {
     display: none;
@@ -420,9 +488,23 @@
         grid-template-columns: 1fr !important;
     }
     
+    .dash-grid-mobile-single > * {
+        grid-column: 1 / -1 !important;
+    }
+    
     .requirements-grid {
         grid-template-columns: 1fr 1fr !important;
         gap: 15px !important;
+    }
+
+    /* Specifically center the 4th card on tablet when it's in a 3-column grid */
+    @media (min-width: 768px) {
+        .stats-grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+        .stats-grid .stat-card:nth-child(4) {
+            grid-column: 2;
+        }
     }
 }
 
@@ -441,6 +523,57 @@
     }
     .dashboard-header h1 {
         font-size: 1.25rem;
+    }
+
+    .tracking-info-card {
+        left: 15px;
+        right: 15px;
+        width: auto;
+        top: 15px;
+    }
+}
+
+/* ── Ride History & Recurring Appointments: mobile-friendly header ── */
+@media (max-width: 1024px) {
+    #ride-history > div:first-child,
+    #recurring > div:first-child {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 16px;
+    }
+
+    #ride-history > div:first-child > div:first-child h2,
+    #recurring > div:first-child > div:first-child h2 {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+
+    #ride-history > div:first-child > div:first-child p,
+    #recurring > div:first-child > div:first-child p {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    #ride-history > div:first-child > div:last-child {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    #recurring > div:first-child > button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #ride-history > div:first-child > div:last-child .form-control {
+        flex: 1;
+        min-width: 0;
+        width: auto;
+    }
+
+    #ride-history > div:first-child > div:last-child .btn {
+        flex-shrink: 0;
     }
 }
 
@@ -481,4 +614,52 @@
 [data-theme="dark"] .dashboard-layout {
     --primary: #60A5FA;
     --primary-rgb: 96, 165, 250;
+}
+
+/* Dark mode: make mobile/tablet side menu text visible (white) */
+[data-theme="dark"] .dash-hamburger-menu {
+    background: #1F2937;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .dash-menu-header {
+    background: #1F2937;
+    border-color: #374151;
+}
+
+[data-theme="dark"] .dash-hamburger-menu .menu-item {
+    color: #FFFFFF;
+}
+
+[data-theme="dark"] .dash-hamburger-menu .menu-item i {
+    color: #FFFFFF;
+}
+
+[data-theme="dark"] .dash-hamburger-menu .menu-item:hover,
+[data-theme="dark"] .dash-hamburger-menu .menu-item.active {
+    color: var(--primary);
+    background: rgba(96, 165, 250, 0.12);
+}
+
+[data-theme="dark"] .dash-hamburger-menu .menu-item:hover i,
+[data-theme="dark"] .dash-hamburger-menu .menu-item.active i {
+    color: var(--primary);
+}
+
+[data-theme="dark"] .dash-menu-header span,
+[data-theme="dark"] .dash-menu-header strong,
+[data-theme="dark"] .dash-menu-header p {
+    color: #FFFFFF;
+}
+
+[data-theme="dark"] .dash-menu-close {
+    background: #374151;
+    border-color: #4B5563;
+    color: #FFFFFF;
+}
+
+[data-theme="dark"] .dash-hamburger {
+    color: #FFFFFF;
+    background: #374151;
+    border-color: #4B5563;
 }
