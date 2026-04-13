@@ -16,6 +16,25 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <style>
+        @media (min-width: 1024px) {
+            .card-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+            }
+
+            .card-grid>.card:last-child:nth-child(4) {
+                grid-column: 2;
+            }
+        }
+
+        @media (max-width: 1023px) and (min-width: 768px) {
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
 </head>
 
 <body>

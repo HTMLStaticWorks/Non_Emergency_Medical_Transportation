@@ -174,37 +174,42 @@ body.auth-body {
 }
 
 .form-options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+    display: flex !important;
+    flex-flow: row nowrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 12px !important;
+    width: 100% !important;
 }
 
-.remember-me {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    line-height: normal;
-    user-select: none;
-    white-space: nowrap;
+.auth-form .remember-me {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    line-height: 1.2 !important;
+    user-select: none !important;
+    white-space: nowrap !important;
+    margin-bottom: 0 !important; /* Override potential label margins */
 }
 
 .remember-me input {
-    width: 14px;
-    height: 14px;
-    margin: 0;
-    cursor: pointer;
-    accent-color: var(--primary);
-    transform: translateY(-1px);
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 !important;
+    cursor: pointer !important;
+    accent-color: var(--primary) !important;
+    transform: translateY(-1px) !important;
 }
 
 .forgot-password-link {
-    font-size: 0.85rem;
-    color: var(--primary);
-    font-weight: 600;
+    font-size: 0.85rem !important;
+    color: var(--primary) !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    text-decoration: none !important;
 }
 
 .auth-footer {
